@@ -1,0 +1,116 @@
+/* Body Background */
+body {
+    background: linear-gradient(120deg, #4b0082, #6c24a8, #2a9d8f);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Card Container */
+.card-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+/* Card Styles */
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out, left 0.8s ease, top 0.8s ease;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    border: none;
+    /* Remove any border */
+    background: none;
+    /* Ensure no background color */
+}
+
+/* Flipped State */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Used Card */
+.card.used {
+    transform: translateX(-150%) rotateY(0deg);
+    opacity: 0;
+}
+
+/* Front and Back Styling */
+.card-back,
+.card-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    /* Remove rounded corners */
+    padding: 0;
+    margin: 0;
+}
+
+/* Back of the Card */
+.card-back {
+    transform: rotateY(0deg);
+    background: none;
+    /* Ensure no background color */
+}
+
+/* Front of the Card */
+.card-front {
+    transform: rotateY(180deg);
+    font-family: "Helvetica", sans-serif;
+    text-transform: lowercase;
+    text-align: center;
+    background: #ffffff;
+    /* Explicitly set the front to white */
+    color: #000;
+    /* Ensure the text is readable */
+}
+
+/* SVG Styling */
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the SVG covers the entire card */
+}
+
+/* Question Text */
+.question-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20px;
+    /* Add padding for better readability */
+}
