@@ -143,3 +143,54 @@ body {
     color: #f0f0f0;
     margin-top: 20px;
 }
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 375px) {
+    .content {
+        margin-top: 80px;
+        /* Increased margin to avoid text clipping */
+    }
+
+    .title {
+        font-size: 2.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        /* Adjust subtitle font size */
+    }
+
+    .start-game-button {
+        font-size: 1rem;
+        /* Adjust button font size */
+        padding: 12px 24px;
+    }
+
+    .how-it-works {
+        padding: 15px 8px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        /* Adjust how it works title font size */
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+        /* Adjust description font size */
+    }
+
+    .card-stack {
+        width: 160px;
+        /* Adjust card stack width */
+        height: 220px;
+        /* Adjust card stack height */
+    }
+
+    .section-note {
+        font-size: 0.8rem;
+        /* Adjust note text size */
+    }
+}
