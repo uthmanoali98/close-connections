@@ -17,7 +17,7 @@ const Homepage = () => {
             <div className="content">
                 <h1 className="title">Close Connections</h1>
                 <p className="subtitle">
-                    The deck revitalizes professional networking one question at a time and is a great way to break the ice to learn more about your colleagues and acquaintances
+                    This deck revitalizes professional networking one question at a time and is a great way to break the ice to learn more about your colleagues and acquaintances
                 </p>
                 <button className="start-game-button" onClick={handleStartGame}>
                     Start Game
