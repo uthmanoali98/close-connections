@@ -24,7 +24,6 @@ const Homepage = () => {
                 </button>
             </div>
 
-            {/* New "How It Works" Section */}
             <section className="how-it-works">
                 <h2 className="section-title">how it works</h2>
                 <p className="section-description">
