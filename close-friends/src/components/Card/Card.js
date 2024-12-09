@@ -6,7 +6,7 @@ import cardBackSvg from "../../assets/close-connections-purple-background.svg"; 
 const QUESTIONS = [
     "What was my dream job as a kid?",
     "If I could retire in another country where would I go?",
-    "Have I attended any professional development conferences? If yes, which was my favorite part?",
+    "Have I attended any professional development conferences this year? If yes, which was my favorite part?",
     "What would I give a TED talk on?",
     "Am I pro or against office potlucks? Explain why.",
     "What would I get my masters in that’s unrelated to my day job?",
@@ -18,7 +18,7 @@ const QUESTIONS = [
     "What’s my ideal day of company-sponsored volunteering?",
     "What’s one professional goal you’d like to accomplish by the end of the year?",
     "Share a piece of advice you’d give to someone who is new to your field.",
-    "What’s one idea you’d like to pitch to your boss but you haven’t done yet because you’ve been too nervous?",
+    "What’s one idea you’d like to pitch to your boss but you haven’t yet because you’ve been too nervous?",
     "Talk about one person who has helped you in your professional life that you’d like to thank.",
     "Who is my current professional role model?",
     "Name 3 artists or musical groups you listen to on your morning commute.",
@@ -27,7 +27,7 @@ const QUESTIONS = [
     "How would your family describe what you do for work?",
     "Have I ever lived or studied abroad? If yes, where?",
     "What was my first job?",
-    "What’s my ideal casual Friday work outfit?",
+    "What’s my go to casual Friday work outfit?",
     "What’s the best office lunch or dinner restaurant?",
     "If you had a time machine, what is a mistake you previously made that you’d choose to make again?",
 ];
@@ -109,7 +109,7 @@ const CardGame = () => {
                         />
                     </div>
                     <div className="card-front">
-                        <p>{currentQuestion}</p>
+                        <p className="question-text">{currentQuestion}</p>
                     </div>
                 </div>
             ))}
